@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Лазарева](https://up.htmlacademy.ru/htmlcss/24/user/954381).
-* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
+* Наставник: [Антон Попов](https://up.htmlacademy.ru/htmlcss/24/user/78239).
 
 
 ---
