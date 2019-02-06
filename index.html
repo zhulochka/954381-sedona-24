@@ -69,12 +69,49 @@
         </h3>
         <p>Большинство едет в Гранд Каньон и толпится там</p>
       </section>
-      <section class="searchform">
+      <section class="searchhotels">
         <h2 class="visually-hidden">Форма поиска гостиниц</h2>
         <p class="interesting">Заинтересовались?</p>
         <p class="input-date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Cедоне</p>
-        <!--Здесь будет форма-->
+        <button class="searchhotels-button" type="button">
+          Поиск гостиницы в Седоне
+        </button>
+        <form class="searchhotels-form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="searchhotels-item">
+            <label for="datein">Дата заезда:</label>
+            <input id="datein" type="text" name="datein" placeholder="24 апреля 2017">
+            <button class="calendar-btn" type="button">
+              календарь
+            </button>
+          </p>
+          <p class="searchhotels-item">
+            <label for="dateout">Дата выезда:</label>
+            <input id="dateout" type="text" name="dateout" placeholder="4 июля 2017">
+            <button class="calendar-btn" type="button">
+              календарь
+            </button>
+          </p>
+          <p class="searchhotels-item">
+            <label for="number-adult">Взрослые:</label>
+            <button class="moreless" type="button">
+              -
+            </button>
+            <input id="number-adult" type="number" name="number-adult" placeholder="2">
+            <button class="moreless" type="button">
+              +
+            </button>
+            <label for="number-children">Дети:</label>
+            <button class="moreless" type="button">
+              -
+            </button>
+            <input id="number-children" type="number" name="number-children" placeholder="0">
+            <button class="moreless" type="button">
+              +
+            </button>
+          </p>
+          <button class="find-button" type="submit">Найти</button>
+        </form>
       </section>
       <section class="map">
       <!--карта Седоны - пока как изображение -->
@@ -82,6 +119,7 @@
       <p>
         <img src="img/map.jpg" width="1200" height="593" alt="карта проезда в Седону">
       </p>
+      </section>
     </main>
     <footer class="main-footer">
       <p class="footer-visitSEDONA">#visitSEDONA</p>
