@@ -25,12 +25,85 @@
       <section class="filters">
         <h2 class="visually-hidden">Подбор гостиниц по параметрам</h2>
 
-        <!--Здесь будет форма фильтр-->
+
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox"
+                  type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox"
+                  type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option" lang="en">
+                <input class="visually-hidden filter-input filter-input-checkbox"
+                  type="checkbox" name="Wi-Fi" id="filter-Wi-Fi">
+                <label for="filter-Wi-Fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox"
+                  type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox"
+                  type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option" lang="en">
+                <input class="visually-hidden filter-input filter-input-checkbox"
+                  type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <!--этот раздел еще не закончен. Позже обещали дать разбор по ползунку.-->
+
+            <legend><label for="rangepricemin">Стоимость в сутки (Р):</label></legend>
+            <table class="table">
+              <tr class="">
+                <td class="">от<input type="number" min="0" step="100" value="0" id="inputpricemin"
+                  onchange="rangepricemin.value = inputpricemin.value" aria-label="нижняя граница диапазона цены">
+                </td>
+                <td class="">До<input type="number" min="0" step="100" value="3000" id="inputpricemax"
+                  onchange="rangepricemax.value = inputpricemax.value" aria-label="верхняя граница диапазона цены">
+                </td>
+              </tr>
+            </table>
+            <input type="range" min="0" step="100" max="5000" value="0" id="rangepricemin"
+              onchange="inputpricemin.value = rangepricemin.value" aria-label="нижняя граница диапазона цены"><br>
+            <input type="range" min="0" step="100" max="5000" value="3000" id="rangepricemax"
+              onchange="inputpricemax.value = rangepricemax.value" aria-label="верхняя граница диапазона цены">
+          </fieldset>
+          <button type="submit" class="filter-button button" aria-label="показать">
+            Показать
+          </button>
+        </form>
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка списка гостиниц</h2>
-          <!--Здесь будет сортировка-->
-
+        <p>Найдено: 3</p>
+        <p>Сортировка:</p>
+        <ul class="">
+          <li><a class="sorting" href="#">По цене</a></li>
+          <li><a class="sorting" href="#">По типу</a></li>
+          <li><a class="sorting" href="#">По рейтингу</a></li>
+        </ul>
+        <ul class="">
+          <li><a class="sorting" href="#"><img src="img/sorting-up.svg" width="11" height="10" alt="сортировка по возрастанию"></a></li>
+          <li><a class="sorting" href="#"><img src="img/sorting-down.svg" width="11" height="10" alt="сортировка по убыванию"></a></li>
+        </ul>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
