@@ -70,19 +70,22 @@
           <fieldset>
             <!--этот раздел еще не закончен. Позже обещали дать разбор по ползунку.-->
 
-            <legend><label for="rangepricemin">Стоимость в сутки (Р):</label></legend>
-            <table class="table">
-              <tr class="">
-                <td class="">от<input type="number" min="0" step="100" value="0" id="inputpricemin"
+            <legend>
+              <label for="rangepricemin">Стоимость в сутки (Р):</label>
+            </legend>
+            <p class="table">
+              <label>
+                от
+                <input type="number" min="0" step="100" value="0" id="inputpricemin"
                   onchange="rangepricemin.value = inputpricemin.value" aria-label="нижняя граница диапазона цены">
-                </td>
-                <td class="">До<input type="number" min="0" step="100" value="3000" id="inputpricemax"
+              </label>
+              <label>
+                до<input type="number" min="0" step="100" value="3000" id="inputpricemax"
                   onchange="rangepricemax.value = inputpricemax.value" aria-label="верхняя граница диапазона цены">
-                </td>
-              </tr>
-            </table>
+              </label>
+            </p>
             <input type="range" min="0" step="100" max="5000" value="0" id="rangepricemin"
-              onchange="inputpricemin.value = rangepricemin.value" aria-label="нижняя граница диапазона цены"><br>
+              onchange="inputpricemin.value = rangepricemin.value" aria-label="нижняя граница диапазона цены">
             <input type="range" min="0" step="100" max="5000" value="3000" id="rangepricemax"
               onchange="inputpricemax.value = rangepricemax.value" aria-label="верхняя граница диапазона цены">
           </fieldset>
@@ -118,7 +121,7 @@
               <span class="catalog-title" lang="en">Amara Resort &amp; Spa</span>
               <span class="catalog-item-category">Гостиница</span>
             </h3>
-            <span class="catalog-item-price">от 2 900 Р.</span><br>
+            <span class="catalog-item-price">от 2 900 Р.</span>
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-book" href="#">Забронировать</a>
             <p>
@@ -141,7 +144,7 @@
               <span class="catalog-title" lang="en">Desert Quail Inn</span>
               <span class="catalog-item-category">Мотель</span>
             </h3>
-            <span class="catalog-item-price">от 3 000 Р.</span><br>
+            <span class="catalog-item-price">от 3 000 Р.</span>
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-book" href="#">Забронировать</a>
             <p>
@@ -162,7 +165,7 @@
               <span class="catalog-title" lang="en">Villas at Poco Diablo</span>
               <span class="catalog-item-category">Апартаменты</span>
             </h3>
-            <span class="catalog-item-price">от 2 000 Р.</span><br>
+            <span class="catalog-item-price">от 2 000 Р.</span>
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-book" href="#">Забронировать</a>
             <p>
